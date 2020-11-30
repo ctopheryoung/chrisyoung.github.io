@@ -1,3 +1,5 @@
+$red: #f2511b;
+
 @mixin bungee-shade {
   font-family: 'Bungee Shade', cursive;
 }
@@ -13,4 +15,38 @@ body {
 h1 {
   @include bungee-shade;
   font-size: 40px;
+
+  & a {
+    color: inherit;
+
+    &:hover {
+      color: $red;
+      text-decoration: none;
+    }
+  }
+}
+
+a {
+  color: $red;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+li {
+  padding-left: 8px;
+
+  &.gg {
+    list-style-type: "\1F52A"; // knife emoji
+  }
+
+  &.lig {
+    list-style-type: "\1F455"; // t-shirt emoji
+  }
+
+  &.astro {
+    list-style-type: "\1F3AE"; // video game emoji
+  }
 }
