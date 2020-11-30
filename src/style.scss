@@ -1,0 +1,16 @@
+@mixin bungee-shade {
+  font-family: 'Bungee Shade', cursive;
+}
+
+@mixin roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  @include roboto;
+}
+
+h1 {
+  @include bungee-shade;
+  font-size: 40px;
+}
