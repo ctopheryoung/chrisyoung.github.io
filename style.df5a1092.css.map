@@ -1,1 +1,0 @@
-{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAQA,KAHE,8BAOF,GAXE,gCAAA,CAaA","file":"style.df5a1092.css","sourceRoot":"../src","sourcesContent":["@mixin bungee-shade {\n  font-family: 'Bungee Shade', cursive;\n}\n\n@mixin roboto {\n  font-family: 'Roboto', sans-serif;\n}\n\nbody {\n  @include roboto;\n}\n\nh1 {\n  @include bungee-shade;\n  font-size: 40px;\n}"]}
