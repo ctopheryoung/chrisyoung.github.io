@@ -1,4 +1,5 @@
 $red: #f2511b;
+$cream: #f1f1f1;
 
 @mixin bungee-shade {
   font-family: 'Bungee Shade', cursive;
@@ -10,19 +11,17 @@ $red: #f2511b;
 
 body {
   @include roboto;
+  background-color: $cream;
+  // margin: 20px;
 }
 
 h1 {
   @include bungee-shade;
   font-size: 40px;
 
-  & a {
-    color: inherit;
-
-    &:hover {
-      color: $red;
-      text-decoration: none;
-    }
+  & a:hover {
+    color: $red;
+    text-decoration: none;
   }
 }
 
